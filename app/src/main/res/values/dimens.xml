@@ -1,4 +1,14 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="pad_frag">14dp</dimen>
+
+
+    <dimen name="textTitle">18dp</dimen>
+    <dimen name="textSubTitle">16dp</dimen>
+    <dimen name="textNormal">14dp</dimen>
+    <dimen name="textSmall">10dp</dimen>
+
+
+    <dimen name="spaceNormal">14dp</dimen>
+    <dimen name="spaceSmall">8dp</dimen>
 </resources>

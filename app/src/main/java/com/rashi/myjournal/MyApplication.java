@@ -3,6 +3,9 @@ package com.rashi.myjournal;
 import android.app.Application;
 import android.util.Log;
 
+import com.facebook.stetho.Stetho;
+import com.uphyca.stetho_realm.RealmInspectorModulesProvider;
+
 import io.realm.Realm;
 import timber.log.Timber;
 
@@ -23,6 +26,12 @@ public class MyApplication extends Application {
             Timber.uprootAll();
             Timber.plant(new Timber.DebugTree());
         }
+
+        Stetho.initialize(
+                Stetho.newInitializerBuilder(this)
+                        .enableDumpapp(Stetho.defaultDumperPluginsProvider(this))
+                        .enableWebKitInspector(RealmInspectorModulesProvider.builder(this).build())
+                        .build());
     }
 
 }

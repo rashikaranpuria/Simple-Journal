@@ -8,11 +8,11 @@ import io.realm.RealmObject;
  * Created by rashi on 27/4/17.
  */
 
-public class Note extends RealmObject {
+public class JournalEntry extends RealmObject {
     public String title;
     public String content;
 
-    public Note() {
+    public JournalEntry() {
     }
 
     public void setContent(String content) {

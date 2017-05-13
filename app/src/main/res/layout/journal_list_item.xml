@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/spaceNormal"
+    android:foreground="?selectableItemBackground">
+
+    <TextView
+        android:id="@+id/text_journal_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="A title"
+        android:textColor="@color/grey_900"
+        android:textSize="@dimen/textTitle"
+        android:layout_marginBottom="@dimen/spaceSmall"
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:id="@+id/text_journal_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Simple descriptiove lines that can go well beyond a lot of lines so to say who knows where it stops to take a note of how long can this just go one and on and on forever"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/grey_700"
+        android:textSize="@dimen/textSubTitle"/>
+
+</LinearLayout>
